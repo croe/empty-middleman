@@ -1,0 +1,23 @@
+{
+  "name": "UNSETED",
+  "version": "0.0.0",
+  "homepage": "UNSETED",
+  "authors": [
+    "UNSETED"
+  ],
+  "license": "UNSETED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.4.7",
+    "fontawesome": "~4.2.0",
+    "jquery.kerning": "~0.3.0",
+    "jquery-smooth-scroll": "~1.5.4"
+  }
+}
