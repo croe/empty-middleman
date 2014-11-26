@@ -4,7 +4,7 @@ Middlemanの諸々設定済み空プロジェクト。
 
 ## 使い方
 
-1. ダウンロードか`git clone`で手元に落とす(ダウンロードの場合はzipファイルなので展開しておく)
+1. ダウンロードか`git clone git@github.com:2YY/empty-middleman.git`で手元に落とす(ダウンロードの場合はzipファイルなので展開しておく)
 2. 出来上がったディレクトリのルートに`cd`で移動する
 3. `bundle install  --path=vendor/bundle`を実行する(グローバルにBundler入ってない場合はあらかじめ`gem install bundler`しておく)
 4. `bower install`を実行する(グローバルにBower入ってない場合はあらかじめ`npm install bower -g`しておく)
