@@ -57,3 +57,7 @@ Photoshop拡張もあるアイコンフォントって他にもあるのかな?
 がっつり各文字の組み合わせごとに字間を調整することも出来る。
 
 [layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素をカーニングするように設定している。
+
+### ページタイトル
+
+[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、未設定の時と、末尾に共通して加える文言を設定できるようにしている。
