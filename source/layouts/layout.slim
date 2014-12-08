@@ -11,10 +11,11 @@ html lang="ja"
     meta name="description" content=""
 
     /! Use title if it's in the page YAML frontmatter
+    - default_page_title_text = '全ページ共通に含むページタイトルテキスト'
     - if(data.page.title)
-      title == data.page.title + ' | 全ページ共通に含むページタイトルテキスト'
+      title == data.page.title + ' | ' + default_page_title_text
     - else
-      title == '未設定ページに適用するデフォルトのページタイトル'
+      title == default_page_title_text
 
     / == stylesheet_link_tag "flexslider/flexslider", "all"
     == stylesheet_link_tag "all"
