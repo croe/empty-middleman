@@ -1,15 +1,10 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
+source 'https://rubygems.org'
 source 'http://rubygems.org'
 
-gem "middleman", "~> 3.3.7"
-gem "middleman-blog", "~> 3.5.3"
+gem "middleman"
+gem "middleman-blog"
 gem "middleman-slim"
-
-# For feed.xml.builder
-gem "builder", "~> 3.0"
-
-# zoneinfo
+gem "builder"
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'capistrano'
