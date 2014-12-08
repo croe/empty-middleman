@@ -5,8 +5,11 @@ vendor/
 # Middleman build
 build/
 
+# Node
+node_modules/
+
 # Bower
-/bower_components
+bower_components/
 
 # Cache
 .sass-cache/
