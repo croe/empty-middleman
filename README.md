@@ -7,6 +7,7 @@ Middlemanの諸々設定済み空プロジェクト。
 1. ダウンロードか`git clone git@github.com:2YY/empty-middleman.git`で手元に落とす(ダウンロードの場合はzipファイルなので展開しておく)
 2. 出来上がったディレクトリのルートに`cd`で移動する
 3. `bundle install  --path=vendor/bundle`を実行する(グローバルにBundler入ってない場合はあらかじめ`gem install bundler`しておく)
+    + **Windows**で'bundle install'が'Faild build to native gem extension'みたいな感じのエラーと共に失敗する場合は、**DevKit**のインストールがうまくいってない可能性が極めて高いので、改めてDevKitだけ再インストールして再トライするのがオススメ。
 4. `bower install`を実行する(グローバルにBower入ってない場合はあらかじめ`npm install bower -g`しておく)
 5. [bower.json](https://github.com/2YY/empty-middleman/blob/master/bower.json)に「name」「authors」「license」を記入する
     + 必須じゃないのでやらなくても開発は出来るけど、記入しておくとなんとなくスッキリする
