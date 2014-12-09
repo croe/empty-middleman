@@ -66,3 +66,12 @@ Photoshop拡張もあるアイコンフォントって他にもあるのかな?
 ### ページタイトル
 
 [layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、未設定の時と、末尾に共通して加える文言を設定できるようにしている。
+
+
+
+
+## 注意事項
+
++ MiddlemanのキャッシュバスターをONにしてビルドしたらスタイルガイドのCSSがぶっこわれる問題
+    + `grunt-kss`の`includePath`に正規表現が使えないとどうしようもない……
+    + めんどいけど、どうしてもキャッシュバスター使いたいときは一時的にONにしてビルドして、すぐまたOFFに戻すってするのが無難
