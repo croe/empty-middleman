@@ -2,7 +2,7 @@
 
 Middlemanの諸々設定済み空プロジェクト。
 
-## 使い方
+## 導入
 
 1. ダウンロードか`git clone git@github.com:2YY/empty-middleman.git`で手元に落とす(ダウンロードの場合はzipファイルなので展開しておく)
 2. 出来上がったディレクトリのルートに`cd`で移動する
@@ -13,7 +13,11 @@ Middlemanの諸々設定済み空プロジェクト。
     + 必須じゃないのでやらなくても開発は出来るけど、記入しておくとなんとなくスッキリする
 6. 準備完了! 後は中身を作る
 
-## 設定内容
+## できること
+
+### [KSS](http://kss-node.github.io/kss-node/)
+
+KSSを使ってスタイルガイドを作れるようにした。`grunt dev-styleguide`で`localhost:9000`に`styleguide/`がホスティングされるように設定してる。ライブリロードする。
 
 ### [Foundation](http://foundation.zurb.com)
 
