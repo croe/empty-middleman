@@ -27,9 +27,8 @@ module.exports = (grunt) ->
       styleguide:
         options:
           port: 9000
-          # keepalive: true
           livereload: true
-          base: 'styleguide/'
+          base: './'
     esteWatch:
       options:
         dirs: ['source/stylesheets/**/']
