@@ -19,6 +19,6 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-este-watch": "^0.1.18",
     "grunt-exec": "^0.4.6",
-    "grunt-kss": "^0.4.0",
+    "grunt-kss": "^0.4.0"
   }
 }
