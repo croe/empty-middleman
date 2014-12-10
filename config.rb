@@ -155,6 +155,8 @@ after_configuration do
   sprockets.import_asset "modernizr/modernizr.js"
 end
 
+ignore "/stylesheets/styleguide.md"
+
 ###
 # Gem
 ###
