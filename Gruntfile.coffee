@@ -13,6 +13,9 @@ module.exports = (grunt) ->
       options:
         globals: ['after', 'afterEach', 'before', 'beforeEach', 'describe', 'it', 'expect', 'sinon', 'location', 'module']
       src: ['source/javascripts/**/*.js']
+    exec:
+      styleguide:
+        command: 'bundle exec middleman build'
     kss:
       dist:
         options:
@@ -35,9 +38,9 @@ module.exports = (grunt) ->
           extensions: ['sass', 'scss', 'md']
           port: 35729
       sass: (filepath) ->
-        return ['kss:dist']
+        return ['exec:styleguide', 'kss:dist']
       scss: (filepath) ->
-        return ['kss:dist']
+        return ['exec:styleguide', 'kss:dist']
       md: (filepath) ->
         return ['kss:dist']
 
@@ -49,4 +52,4 @@ module.exports = (grunt) ->
       grunt.loadNpmTasks t
   grunt.registerTask 'dev-styleguide', 'Watch and connect styleguide files', ['connect:styleguide', 'esteWatch:styleguide']
   grunt.registerTask 'script', 'Run lint and test for script files.', ['jshint', 'coffee_jshint']
-  grunt.registerTask 'styleguide', 'Create style guide.', ['kss:dist']
+  grunt.registerTask 'styleguide', 'Create style guide.', ['exec:styleguide', 'kss:dist']
