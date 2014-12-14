@@ -42,8 +42,6 @@ CSSの設計としては、
 
 ページ内リンクをスムーススクロールさせるやつ。
 
-TODO: 使い方のサンプルコードをここに書く……。
-
 ### [fontawesome](http://fortawesome.github.io/Font-Awesome/)
 
 みんな大好きアイコンフォント。
