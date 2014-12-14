@@ -12,3 +12,4 @@ end
 
 # Deploy tools
 gem 'capistrano'
+gem 'railsless-deploy'
