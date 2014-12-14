@@ -53,13 +53,15 @@ TODO: 使い方のサンプルコードをここに書く……。
 
 いいですね……!
 
-Photoshop拡張もあるアイコンフォントって他にもあるのかな?
-
 ### [jquery.kerning](https://github.com/KarappoInc/jquery.kerning.js)
 
 デフォルトでも日本語の約者をカーニングしてくれるやつ。
 
 がっつり各文字の組み合わせごとに字間を調整することも出来る。
+
+### [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
+
+スクロールしてもサイドバーを画面に固定して表示し続けるやつ。
 
 [layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素をカーニングするように設定している。
 
