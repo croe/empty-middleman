@@ -59,11 +59,11 @@ TODO: 使い方のサンプルコードをここに書く……。
 
 がっつり各文字の組み合わせごとに字間を調整することも出来る。
 
+[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素をカーニングするように設定している。
+
 ### [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
 
 スクロールしてもサイドバーを画面に固定して表示し続けるやつ。
-
-[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素をカーニングするように設定している。
 
 ### ページタイトル
 
