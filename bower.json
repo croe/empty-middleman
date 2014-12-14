@@ -18,6 +18,7 @@
     "foundation": "~5.4.7",
     "fontawesome": "~4.2.0",
     "jquery.kerning": "~0.3.0",
-    "jquery-smooth-scroll": "~1.5.4"
+    "jquery-smooth-scroll": "~1.5.4",
+    "ScrollToFixed": "~1.0.6"
   }
 }
