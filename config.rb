@@ -153,9 +153,16 @@ after_configuration do
   sprockets.import_asset "jquery.kerning"
   sprockets.import_asset "jquery-placeholder"
   sprockets.import_asset "modernizr/modernizr.js"
+  sprockets.import_asset "ScrollToFixed/jquery-scrolltofixed.js"
 end
 
 ignore "/stylesheets/styleguide.md"
+
+###
+# Proxy
+###
+
+# proxy '/index.html', '/article/index.html'
 
 ###
 # Gem
