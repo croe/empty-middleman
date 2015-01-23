@@ -17,13 +17,13 @@ Middlemanの諸々設定済み空プロジェクト。
 
 ### [KSS](http://kss-node.github.io/kss-node/)
 
-KSSを使ってスタイルガイドを作れるようにした。`grunt dev-styleguide`で`localhost:9000`に`styleguide/`がホスティングされるように設定してる。ライブリロードする。
+KSSを使ってスタイルガイドを作れるようにした。
 
 ### [Foundation](http://foundation.zurb.com)
 
 Foundationが使える。
 
-CSSの設計としては、
+CSSの大枠の設計として、
 
 + [stylesheets/all.sass](https://github.com/2YY/empty-middleman/blob/master/source/stylesheets/all.sass)
     + Bowerコンポーネントを全てこの中にインポートする
@@ -36,7 +36,7 @@ CSSの設計としては、
     + ページごとのモジュールは、ページ名でディレクトリを作ってその中に置く
         + 例えば`/info.html`のモジュールであれば、`stylesheets/modules/info/info-list`という形
 
-という想定。
+という形を想定している。
 
 ### [jquery-smooth-scroll](https://github.com/kswedberg/jquery-smooth-scroll)
 
@@ -44,12 +44,10 @@ CSSの設計としては、
 
 ### [fontawesome](http://fortawesome.github.io/Font-Awesome/)
 
-みんな大好きアイコンフォント。
+アイコンフォント。
 
 + [アイコン一覧](http://fortawesome.github.io/Font-Awesome/icons/)
 + [Photoshop拡張](http://creativedo.co/FontAwesomePS)
-
-いいですね……!
 
 ### [jquery.kerning](https://github.com/KarappoInc/jquery.kerning.js)
 
@@ -57,7 +55,7 @@ CSSの設計としては、
 
 がっつり各文字の組み合わせごとに字間を調整することも出来る。
 
-[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素をカーニングするように設定している。
+デフォルトでは、[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、p要素のみカーニングするように設定している。
 
 ### [ScrollToFixed](https://github.com/bigspotteddog/ScrollToFixed)
 
