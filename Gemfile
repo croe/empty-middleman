@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem 'middleman'
 gem 'middleman-blog'
 gem 'middleman-slim'
+gem 'middleman-kss'
 platforms :mswin, :mingw, :x64_mingw do
   gem 'tzinfo-data'
   gem 'wdm'

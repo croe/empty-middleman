@@ -63,6 +63,20 @@ CSSの設計としては、
 
 スクロールしてもサイドバーを画面に固定して表示し続けるやつ。
 
+### [Colorbox](https://github.com/jackmoore/colorbox)
+
+いわゆるLightbox的なダイアログ。
+
+動画もスライダーもiframeもなんでも出せる。レスポンシブ対応可。
+
+### [NiceScroll](https://github.com/inuyaksa/jquery.nicescroll)
+
+慣性スクロール + スクロールバーのデザイン変更。
+
+### [SweetAlert](https://github.com/t4t5/sweetalert)
+
+おしゃれなアラート。
+
 ### ページタイトル
 
 [layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、未設定の時と、末尾に共通して加える文言を設定できるようにしている。
@@ -72,10 +86,5 @@ CSSの設計としては、
 
 ## 注意事項
 
-+ MiddlemanのキャッシュバスターをONにしてビルドしたらスタイルガイドのCSSがぶっこわれる問題
-    + `grunt-kss`の`includePath`に正規表現が使えないとどうしようもない……
-    + めんどいけど、どうしてもキャッシュバスター使いたいときは一時的にONにしてビルドして、すぐまたOFFに戻すってするのが無難
 + KSSのプレビューがレスポンシブに対応してない問題
-    + Styledoccoみたいに切り替え表示したい……!
-    + カスタムテンプレートを作ればできるようになるので、そのうち作るか既にあるなら教えてほしい……
-    + 現状どうしようもないので、苦肉の策としてmiddlemanの画面でプレビューして出来上がったらコードだけスタイルガイドに埋め込む形を取らざるを得ない。
+    + Styledoccoみたいにボタンを押すとレスポンシブ対応できるカスタムテンプレートを作れば解決する。まだ作ってない。
