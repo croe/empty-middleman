@@ -43,6 +43,10 @@ Middlemanの諸々設定済み空プロジェクト。
 
 ## できること
 
+---
+
+ワークフロー
+
 ### CI
 
 開発ブランチのプッシュ時に、次のコマンドをフックさせることが出来る。
@@ -82,9 +86,23 @@ Mocha + Chai + Sinon + Istanbul で、JSの単体テストが出来る。
 
 これでテストアップも本番アップも自動化できる。
 
+---
+
+システム
+
 ### [Scouter](https://github.com/morizyun/scouter)
 
 ソーシャルのシェア数をRubyスクリプト内で取得するやつ。
+
+### ページタイトルとデフォルトのレイアウト
+
+[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、未設定の時と、末尾に共通して加える文言を設定できるようにしている。
+
+[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)には他にも、スタイルシートやスクリプト、パーシャルなどほぼ毎回使うアセットの呼び出しを宣言してある。
+
+---
+
+フロントエンドアセット
 
 ### [Foundation](http://foundation.zurb.com)
 
@@ -134,7 +152,3 @@ Foundationが使える。
 おしゃれなアラート。
 
 デフォルトでは無効にしているので、必要な場合はall.jsなどで呼び出す。
-
-### ページタイトル
-
-[layout.slim](https://github.com/2YY/empty-middleman/blob/master/source/layouts/layout.slim)にて、未設定の時と、末尾に共通して加える文言を設定できるようにしている。

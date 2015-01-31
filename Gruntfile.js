@@ -76,5 +76,6 @@
 
 
 
-  grunt.registerTask('watch', 'watch source files', ['esteWatch:casperjs', 'esteWatch:mocha']);
+  grunt.registerTask('watch', 'watch source files', ['esteWatch:casperjs', 'esteWatch:mocha'])
+  grunt.registerTask('test', 'test script files', ['casperjs', 'mocha_istanbul'])
 };
