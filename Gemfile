@@ -6,6 +6,7 @@ gem 'middleman'
 gem 'middleman-blog'
 gem 'builder'
 gem 'middleman-slim'
+gem 'slim'
 gem 'middleman-kss'
 gem 'scouter'
 platforms :mswin, :mingw, :x64_mingw do
