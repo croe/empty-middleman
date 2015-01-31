@@ -43,6 +43,24 @@ Middlemanの諸々設定済み空プロジェクト。
 
 ## できること
 
+### CI
+
+開発ブランチのプッシュ時に、次のコマンドをフックさせることが出来る。
+
++ `grunt test`
+  + CasperJS
+  + Mocha
++ `cap deploy staging`
+  + テストアップ
+
+マスターブランチのプッシュ時に、次のコマンドをフックさせることが出来る。
+
++  `grunt test`
+  + CasperJS
+  + Mocha
++  `cap deploy production`
+  + 本番アップ
+
 ### [middleman-kss](https://github.com/Darep/middleman-kss)
 
 [KSS](http://kss-node.github.io/kss-node/)を使ってスタイルガイドを作れる。
@@ -53,9 +71,20 @@ CasperJSを使ってビューのE2Eテストが出来る。
 
 ### [mocha](https://github.com/mochajs/mocha)
 
-mocha + chai + sinon + istanbul で、JSの単体テストが出来る。
+Mocha + Chai + Sinon + Istanbul で、JSの単体テストが出来る。
 
 カバレッジは`source/tests/coverage/mocha`に出力される。
+
+
+### [Capistrano](https://github.com/capistrano/capistrano)
+
+デプロイをリモートリポジトリのプッシュのフックとして実行させられるようになる。
+
+これでテストアップも本番アップも自動化できる。
+
+### [Scouter](https://github.com/morizyun/scouter)
+
+ソーシャルのシェア数をRubyスクリプト内で取得するやつ。
 
 ### [Foundation](http://foundation.zurb.com)
 
