@@ -1,21 +1,16 @@
 {
-  "name": "my-great-project",
+  "name": "UNDEFINED",
   "version": "0.0.0",
-  "description": "my-great-project",
+  "description": "UNDEFINED",
   "main": "README.md",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "my-great-url"
+    "url": "UNDEFINED"
   },
-  "author": "my-great-name",
-  "license": "my-greate-license",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-coffee-jshint": "^0.2.1",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-este-watch": "^0.1.18"
-  }
+  "author": "UNDEFINED",
+  "license": "UNDEFINED",
+  "devDependencies": {}
 }

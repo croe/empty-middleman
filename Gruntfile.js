@@ -22,7 +22,15 @@
       options: {
         globals: ['console']
       },
-      src: ['source/javascripts/**/*.js']
+      src: ['source/javascripts/**/*.js', 'Gruntfile.js']
+    },
+    mocha_istanbul: {
+      src: 'source/tests/mocha',
+      options: {
+        coverageFolder: 'source/tests/coverage/mocha'
+        mask: '**/*/.js',
+        reportFormats: ['lcov']
+      }
     },
     esteWatch: {
       casperjs: {
@@ -35,8 +43,22 @@
           }
         },
         js: function(filepath) {
-          // TODO: 更新したファイルにだけタスクを適用するように変更したい
-          return ['casperjs'];
+          grunt.config 'casperjs.files', [filepath]
+          return 'casperjs'
+        }
+      },
+      mocha: {
+        options: {
+          dirs: ['source/tests/mocha/**/*.js'],
+          livereload: {
+            enabled: true,
+            extensions: ['js'],
+            port: 35730
+          }
+        },
+        js: function(filepath) {
+          grunt.config 'mocha_istanbul.src', filepath
+          return 'mocha_istanbul'
         }
       }
     }
@@ -54,5 +76,5 @@
 
 
 
-  grunt.registerTask('watch', 'watch source files', ['esteWatch:casperjs']);
+  grunt.registerTask('watch', 'watch source files', ['esteWatch:casperjs', 'esteWatch:mocha']);
 };

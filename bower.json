@@ -1,11 +1,11 @@
 {
-  "name": "UNSETED",
+  "name": "UNDEFINED",
   "version": "0.0.0",
-  "homepage": "UNSETED",
+  "homepage": "UNDEFINED",
   "authors": [
-    "UNSETED"
+    "UNDEFINED"
   ],
-  "license": "UNSETED",
+  "license": "UNDEFINED",
   "private": true,
   "ignore": [
     "**/.*",
@@ -14,14 +14,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "foundation": "~5.4.7",
-    "fontawesome": "~4.2.0",
-    "jquery.kerning": "~0.3.0",
-    "jquery-smooth-scroll": "~1.5.4",
-    "ScrollToFixed": "~1.0.6",
-    "nicescroll": "~3.5.6",
-    "colorbox": "~1.5.14",
-    "sweetalert": "~0.4.1"
-  }
+  "dependencies": {}
 }

@@ -3,21 +3,14 @@ html lang="ja"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-
-    /! Always force latest IE rendering engine or request Chrome Frame
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
-
     meta name="keywords" content=""
     meta name="description" content=""
-
-    /! Use title if it's in the page YAML frontmatter
     - default_page_title_text = '全ページ共通に含むページタイトルテキスト'
     - if(data.page.title)
       title == data.page.title + ' | ' + default_page_title_text
     - else
       title == default_page_title_text
-
-    / == stylesheet_link_tag "flexslider/flexslider", "all"
     == stylesheet_link_tag "all"
     == javascript_include_tag "modernizr/modernizr.js"
     == javascript_include_tag "jquery/dist/jquery.js"
@@ -34,9 +27,3 @@ html lang="ja"
         / == partial "_global-footer"
         a.exit-off-canvas
     == javascript_include_tag "all"
-    javascript:
-      $(document).foundation()
-      $(function() {
-        $('p').kerning()
-        FastClick.attach(document.body)
-      })
