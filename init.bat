@@ -1,14 +1,14 @@
-bundle install --path=vendor/bundle --jobs=3
-npm install --save-dev grunt
-npm install --save-dev grunt-contrib-jshint
-npm install --save-dev grunt-mocha-istanbul
-npm install --save-dev sinon-chai
-npm install --save-dev grunt-este-watch
-bower install --save foundation
-bower install --save fontawesome
-bower install --save jquery.kerning
-bower install --save jquery-smooth-scroll
-bower install --save ScrollToFixed
-bower install --save nicescroll
-bower install --save colorbox
-bower install --save sweetalert
+call bundle install --path=vendor/bundle --jobs=3
+call npm install --save-dev grunt
+call npm install --save-dev grunt-contrib-jshint
+call npm install --save-dev grunt-mocha-istanbul
+call npm install --save-dev sinon-chai
+call npm install --save-dev grunt-este-watch
+call bower install --save foundation
+call bower install --save fontawesome
+call bower install --save jquery.kerning
+call bower install --save jquery-smooth-scroll
+call bower install --save ScrollToFixed
+call bower install --save nicescroll
+call bower install --save colorbox
+call bower install --save sweetalert
