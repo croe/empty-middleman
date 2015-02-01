@@ -1,0 +1,24 @@
+box: wercker/default
+deploy:
+    steps:
+        - script:
+            name: make .ssh directory
+            code: mkdir -p "$HOME/.ssh"
+        - create-file:
+            name: write ssh key
+            filename: $HOME/.ssh/id_rsa
+            overwrite: true
+            hide-from-log: true
+            content: $WERCKER_SSH_KEY_PRIVATE
+        - script:
+            name: set permissions for ssh key
+            code: chmod 0400 $HOME/.ssh/id_rsa
+        - bundle-install
+        - cap:
+            stage: $WERCKER_DEPLOYTARGET_NAME
+            tasks: deploy
+    after-steps:
+        - wantedly/pretty-slack-notify:
+            team: my-team
+            channel: development
+            webhook_url: my-url
