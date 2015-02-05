@@ -17,3 +17,7 @@ bower_components/
 
 # .DS_store
 .DS_Store
+
+# grunt-html-validation
+html-validation-report.json
+validation-status.json

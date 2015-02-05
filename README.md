@@ -151,4 +151,6 @@ Foundationが使える。
 
 おしゃれなアラート。
 
-デフォルトでは無効にしているので、必要な場合はall.jsなどで呼び出す。
+### [animate.css](https://github.com/daneden/animate.css)
+
+JSレスで使えるCSSアニメーション。

@@ -27,9 +27,22 @@
     mocha_istanbul: {
       src: 'source/tests/mocha',
       options: {
-        coverageFolder: 'source/tests/coverage/mocha'
+        coverageFolder: 'source/tests/coverage/mocha',
         mask: '**/*/.js',
         reportFormats: ['lcov']
+      }
+    },
+    validation: {
+      options: {
+        remotePath: 'http://localhost:4567/',
+        remoteFiles: ['/'], // remoteFiles: ['mycategory/test2.html'], みたいな
+        reset: true,
+        stoponeerror: false,
+        relaxerror: ['A meta element with an http-equiv attribute whose value is X-UA-Compatible must have a content attribute with the value IE=edge.'],
+        reportpath: 'html-validation-report.json'
+      },
+      files: {
+        src: ['*.html'] // ここはいじらない
       }
     },
     esteWatch: {
@@ -43,7 +56,7 @@
           }
         },
         js: function(filepath) {
-          grunt.config 'casperjs.files', [filepath]
+          grunt.config(['casperjs.files'], [filepath])
           return 'casperjs'
         }
       },
@@ -57,10 +70,25 @@
           }
         },
         js: function(filepath) {
-          grunt.config 'mocha_istanbul.src', filepath
+          grunt.config(['mocha_istanbul.src'], [filepath])
           return 'mocha_istanbul'
         }
-      }
+      } // 正規表現で更新したページだけlocalhost:4567上でバリデートするようにする
+      // },
+      // validation: {
+      //   options: {
+      //     dirs: ['source/**/*.slim'],
+      //     livereload: {
+      //       enabled: true,
+      //       extensions: ['slim'],
+      //       port: 35731
+      //     }
+      //   },
+      //   slim: function(filepath) {
+      //     grunt.config(['mocha_istanbul.src'], [filepath])
+      //     return 'validation'
+      //   }
+      // }
     }
   });
 

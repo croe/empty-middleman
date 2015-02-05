@@ -4,6 +4,8 @@ call npm install --save-dev grunt-contrib-jshint
 call npm install --save-dev grunt-mocha-istanbul
 call npm install --save-dev sinon-chai
 call npm install --save-dev grunt-este-watch
+call npm install --save-dev grunt-html-validation
+call npm install --save-dev grunt-notify
 call bower install --save foundation
 call bower install --save fontawesome
 call bower install --save jquery.kerning
@@ -12,3 +14,4 @@ call bower install --save ScrollToFixed
 call bower install --save nicescroll
 call bower install --save colorbox
 call bower install --save sweetalert
+call bower install --save animate.css
