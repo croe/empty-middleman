@@ -43,27 +43,13 @@ Middlemanの諸々設定済み空プロジェクト。
 
 ## できること
 
----
-
 ワークフロー
 
 ### CI
 
-開発ブランチのプッシュ時に、次のコマンドをフックさせることが出来る。
+ `wercker.yml`に[Wercker](wercker.com/) 用のビルドタスクを予め記述しているので、すぐに登録できる。
 
-+ `grunt test`
-  + CasperJS
-  + Mocha
-+ `cap deploy staging`
-  + テストアップ
-
-マスターブランチのプッシュ時に、次のコマンドをフックさせることが出来る。
-
-+  `grunt test`
-  + CasperJS
-  + Mocha
-+  `cap deploy production`
-  + 本番アップ
+ [Capistrano](https://github.com/capistrano/capistrano) のビルドタスクも用意しているので、環境に合わせて修正すれば、フックでテストとデプロイを自動実行させられるようになる。
 
 ### [middleman-kss](https://github.com/Darep/middleman-kss)
 
@@ -78,13 +64,6 @@ CasperJSを使ってビューのE2Eテストが出来る。
 Mocha + Chai + Sinon + Istanbul で、JSの単体テストが出来る。
 
 カバレッジは`source/tests/coverage/mocha`に出力される。
-
-
-### [Capistrano](https://github.com/capistrano/capistrano)
-
-デプロイをリモートリポジトリのプッシュのフックとして実行させられるようになる。
-
-これでテストアップも本番アップも自動化できる。
 
 ---
 
