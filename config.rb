@@ -104,6 +104,24 @@ end
 after_configuration do
   sprockets.append_path "#{root}/bower_components"
   sprockets.append_path "#{root}/bower_components/fontawesome/fonts"
+  sprockets.append_path "backbone"
+  sprockets.import_asset "colorbox/jquery.colorbox-min.js"
+  sprockets.import_asset "colorbox/example1/colorbox.css"
+  sprockets.import_asset('colorbox/example1/images/border.png') do |logical_path|
+    Pathname.new('stylesheets/images/border.png')
+  end
+  sprockets.import_asset('colorbox/example1/images/controls.png') do |logical_path|
+    Pathname.new('stylesheets/images/controls.png')
+  end
+  sprockets.import_asset('colorbox/example1/images/loading.gif') do |logical_path|
+    Pathname.new('stylesheets/images/loading.gif')
+  end
+  sprockets.import_asset('colorbox/example1/images/loading_background.png') do |logical_path|
+    Pathname.new('stylesheets/images/loading_background.png')
+  end
+  sprockets.import_asset('colorbox/example1/images/overlay.png') do |logical_path|
+    Pathname.new('stylesheets/images/overlay.png')
+  end
   sprockets.import_asset "fastclick"
   sprockets.import_asset "fontawesome"
   sprockets.import_asset "foundation/js/foundation.min.js"
@@ -145,13 +163,17 @@ after_configuration do
   sprockets.import_asset "foundation/scss/foundation/components/_top-bar.scss"
   sprockets.import_asset "foundation/scss/foundation/components/_offcanvas.scss"
   sprockets.import_asset "foundation/scss/foundation/components/_visibility.scss"
+  sprockets.import_asset "Hover"
   sprockets.import_asset "jquery"
   sprockets.import_asset "jquery.cookie/jquery.cookie.js"
   sprockets.import_asset "jquery-smooth-scroll"
   sprockets.import_asset "jquery.kerning"
+  sprockets.import_asset "jquery.nicescroll"
   sprockets.import_asset "jquery-placeholder"
+  sprockets.import_asset "lodash"
   sprockets.import_asset "modernizr/modernizr.js"
   sprockets.import_asset "ScrollToFixed/jquery-scrolltofixed.js"
+  sprockets.import_asset "sweetalert"
 end
 
 # ignore "/stylesheets/styleguide.md"

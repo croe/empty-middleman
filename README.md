@@ -81,13 +81,21 @@ Mocha + Chai + Sinon + Istanbul で、JSの単体テストが出来る。
 
 ---
 
-フロントエンドアセット
+フロントアセット
 
 ### [Foundation](http://foundation.zurb.com)
 
-Foundationが使える。
+Foundationが使える。fastclickやコンポーネントなどの読み込みを既にまとめて記述しているので、すぐに使い始めることができる。
 
 スタイルシートのファイル構成は[SMACSS](https://smacss.com)を意識した形を取っている。見れば大体わかる。
+
+###[Backbone.js](https://github.com/jashkenas/backbone)
+
+JSでモデルが使えるようになる。クラスの代わりに使える。
+
+###[lodash](https://github.com/lodash/lodash)
+
+Underscoreをクールにしたやつ。
 
 ### [jquery-smooth-scroll](https://github.com/kswedberg/jquery-smooth-scroll)
 
@@ -112,15 +120,11 @@ Foundationが使える。
 
 スクロールしてもサイドバーを画面に固定して表示し続けるやつ。
 
-デフォルトでは無効にしているので、必要な場合はall.jsなどで呼び出す。
-
 ### [Colorbox](https://github.com/jackmoore/colorbox)
 
 いわゆるLightbox的なダイアログ。
 
-動画もスライダーもiframeもなんでも出せる。レスポンシブ対応可。
-
-デフォルトでは無効にしているので、必要な場合はall.jsなどで呼び出す。
+動画もスライダーもiframeもなんでも表示できる。レスポンシブ対応可。
 
 ### [NiceScroll](https://github.com/inuyaksa/jquery.nicescroll)
 
@@ -130,6 +134,6 @@ Foundationが使える。
 
 おしゃれなアラート。
 
-### [animate.css](https://github.com/daneden/animate.css)
+### [Hover](https://github.com/IanLunn/Hover)
 
 JSレスで使えるCSSアニメーション。
