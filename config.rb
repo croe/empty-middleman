@@ -168,10 +168,10 @@ after_configuration do
   sprockets.import_asset "jquery.cookie/jquery.cookie.js"
   sprockets.import_asset "jquery-smooth-scroll"
   sprockets.import_asset "jquery.kerning"
-  sprockets.import_asset "jquery.nicescroll"
   sprockets.import_asset "jquery-placeholder"
   sprockets.import_asset "lodash"
   sprockets.import_asset "modernizr/modernizr.js"
+  sprockets.import_asset "nicescroll"
   sprockets.import_asset "ScrollToFixed/jquery-scrolltofixed.js"
   sprockets.import_asset "sweetalert"
 end
