@@ -4,7 +4,7 @@
 //= require jquery.cookie/jquery.cookie
 //= require foundation/js/foundation.min
 //= require jquery.kerning
-//= require jquery.nicescroll
+//= require nicescroll
 //= require jquery-smooth-scroll
 //= require lodash
 
