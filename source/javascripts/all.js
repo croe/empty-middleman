@@ -1,4 +1,3 @@
-//= require backbone
 //= require fastclick
 //= require googleanalytics
 //= require jquery.cookie/jquery.cookie
@@ -7,6 +6,7 @@
 //= require nicescroll
 //= require jquery-smooth-scroll
 //= require lodash
+//= require backbone
 
 
 
