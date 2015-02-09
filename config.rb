@@ -105,6 +105,7 @@ after_configuration do
   sprockets.append_path "#{root}/bower_components"
   sprockets.append_path "#{root}/bower_components/fontawesome/fonts"
   sprockets.append_path "backbone"
+  sprocketns.append_path "backbone-validation"
   sprockets.import_asset "colorbox/jquery.colorbox-min.js"
   sprockets.import_asset "colorbox/example1/colorbox.css"
   sprockets.import_asset('colorbox/example1/images/border.png') do |logical_path|

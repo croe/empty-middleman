@@ -1,5 +1,6 @@
 call bundle install --path=vendor/bundle --jobs=3
 call npm install --save-dev grunt
+call npm install --save-dev grunt-casperjs
 call npm install --save-dev grunt-contrib-jshint
 call npm install --save-dev grunt-mocha-istanbul
 call npm install --save-dev sinon-chai
@@ -7,6 +8,7 @@ call npm install --save-dev grunt-este-watch
 call npm install --save-dev grunt-html-validation
 call npm install --save-dev grunt-notify
 call bower install --save backbone
+call bower install --save backbone-validation
 call bower install --save foundation
 call bower install --save fontawesome
 call bower install --save jquery.kerning
